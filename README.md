@@ -42,7 +42,7 @@
 |Colunm|Type|Options|
 |------|----|-------|
 |text|text||
-|image|string|foreign_key: true|
+|image|string||
 |group|references|null:false,foreign_key: true|
 |user|references|null:false,foreign_key: true|
 
