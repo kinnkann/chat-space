@@ -1,0 +1,19 @@
+.chat-main
+ .main-header
+  .main-header__left-box
+   %h2.main-header__left-box__current-group お試し
+   %ul.main-header__left-box__member-list 
+    %li.main-header__left-box__member-list__member Member : aaa
+  .main-header__edit-btn Edit
+ .messages
+  .message
+
+ .form
+  .new-message
+   .input-box
+    %input.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text", :id => "message_content"}
+     %label.input-box__image{:for => "message_image"}
+      = icon("fa", "image")
+     %input.input-box__image__file{:name => "message[image]", :type => "file", :id => "message_image"}/
+   %input.submit-btn{:name => "comit", :type => "submit", :value => "Send", :data-disable-with => "send"}
+
