@@ -3,7 +3,7 @@
   width: calc(100% - 300px);          
 }
 
-$color: #38aef0;
+$color-lightblue: #38aef0;
 
 .main-header{
   height: 100px;
@@ -26,12 +26,12 @@ $color: #38aef0;
     }
   }
   &__edit-btn{
-    color: $color;
+    color: $color-lightblue;
     height: 40px;
     line-height: 40px;
     padding: 0 20px;
     margin-top: 30px;
-    border: solid 1px $color;
+    border: solid 1px $color-lightblue;
     position: absolute;
     right: 40px;
   }
@@ -79,7 +79,7 @@ $color: #38aef0;
     height: 50px;
     padding: 0 30px;
     margin-left: 15px;
-    background-color: $color;
+    background-color: $color-lightblue;
     color: white;
     cursor: pointer;
 }
