@@ -1,11 +1,12 @@
+$color-white:white;
+
 .chat-side{
   width: 300px;
   background-color: #2f3e51;
   float:left;
-  color: white;
-  & a{
-    color: white;
-    text-decoration: none;
+  color: $color-white;
+  .icon-appearance{
+    color: $color-white;
   }
    .side-header{
      background-color: #253141;
@@ -25,11 +26,11 @@
        &__menu{
         display: flex;
         &__new-group{
-         margin-left: 0.3rem;
+         margin-left: 5px;
        }
      }
       &__edit-user{
-       margin-left: 0.3rem;
+       margin-left: 5px;
      }
     }
   }
@@ -40,7 +41,12 @@
   background-color: #2f3e51;
   padding: 20px 20px 0;
   overflow: scroll;
-    .group{
+  .test-appearance{
+    color: $color-white;
+    text-decoration: none;
+  }
+   .group{
+      font-size:11px;
       margin-bottom:5px;
       &__group-name{
         font-size: 15px;
@@ -49,5 +55,5 @@
       &__latest-message{
         font-size:11px;
       }
-    }
+   }
 }
